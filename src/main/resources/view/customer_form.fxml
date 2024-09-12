@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="483.0" prefWidth="954.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.cusromer.CustomerFormController">
+   <children>
+      <TableView fx:id="tblCustomers" layoutX="43.0" layoutY="223.0" prefHeight="201.0" prefWidth="866.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="colName" prefWidth="123.33333587646484" text="Name" />
+            <TableColumn fx:id="colAddress" prefWidth="134.00001525878906" text="Address" />
+            <TableColumn fx:id="colDob" prefWidth="100.00003051757812" text="DOB" />
+            <TableColumn fx:id="colSalary" prefWidth="126.00003051757812" text="Salary" />
+            <TableColumn fx:id="colCity" prefWidth="119.3333740234375" text="City" />
+            <TableColumn fx:id="colProvince" prefWidth="82.66668701171875" text="Province" />
+            <TableColumn fx:id="colPostalCode" prefWidth="99.3333740234375" text="Postal Code" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="838.0" layoutY="438.0" onAction="#btnReloadOnAction" style="-fx-background-color: #fbc531;" text="Reload" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></JFXButton>
+      <JFXTextField fx:id="txtId" layoutX="118.0" layoutY="77.0" promptText="ID" />
+      <JFXTextField fx:id="txtName" layoutX="308.0" layoutY="77.0" promptText="Name" />
+      <JFXTextField fx:id="txtAddress" layoutX="308.0" layoutY="127.0" promptText="Address" />
+      <DatePicker fx:id="dateDob" layoutX="499.0" layoutY="77.0" prefHeight="25.0" prefWidth="135.0" promptText="DOB" />
+      <ComboBox fx:id="cmbTitle" layoutX="118.0" layoutY="127.0" prefHeight="25.0" prefWidth="135.0" promptText="Title" />
+      <JFXTextField fx:id="txtSalary" layoutX="499.0" layoutY="128.0" promptText="Salary" />
+      <JFXTextField fx:id="txtCity" layoutX="700.0" layoutY="75.0" promptText="City" />
+      <JFXTextField fx:id="txtProvince" layoutX="700.0" layoutY="128.0" promptText="Province" />
+      <JFXTextField fx:id="txtPostalCode" layoutX="120.0" layoutY="176.0" promptText="Postal Code" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#192a56" height="64.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="954.0" />
+      <Label layoutX="375.0" layoutY="13.0" text="Customer Form" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="557.0" layoutY="178.0" onAction="#btnAddOnAction" prefHeight="25.0" prefWidth="53.0" style="-fx-background-color: #4cd137;" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="624.0" layoutY="178.0" onAction="#btnReloadOnAction" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: #00a8ff;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="705.0" layoutY="178.0" onAction="#btnDeleteOnAction" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: #e84118;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="791.0" layoutY="178.0" onAction="#btnReloadOnAction" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: #353b48;" text="Search" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <Separator layoutX="668.0" layoutY="72.0" orientation="VERTICAL" prefHeight="88.0" prefWidth="0.0" />
+      <Separator layoutX="467.0" layoutY="72.0" orientation="VERTICAL" prefHeight="88.0" prefWidth="0.0" />
+      <Separator layoutX="280.0" layoutY="72.0" orientation="VERTICAL" prefHeight="134.0" prefWidth="0.0" />
+   </children>
+</AnchorPane>
